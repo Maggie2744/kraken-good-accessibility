@@ -76,3 +76,17 @@ html {
   border-bottom: 0;
   border-radius: 6px 6px 0 0;
 }
+
+@media print {
+
+  .masthead,
+  .footer {
+    display: none;
+  }
+
+  a::after {
+    content: " <" attr(href) ">";
+    color: #666;
+  }
+
+}
